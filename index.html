@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="flow-image" src="screenshot2-2x.png" />
+          </div>
+          <div class="swiper-slide">
+            <img class="flow-image" src="screenshot4-2x.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="" alt="" style="width: 205px; height: auto" id="img" class="flow-image"/> -->
+
+    <div class="main-section">
+      <div class="mobile-section">
+        <img class="background-img" src="Images/home-phones-2x.png" alt="" />
+      </div>
+      <div class="cc">
+        <div class="form-section">
+          <img
+            class="insta-logo"
+            src="Images/Instagram-Wordmark-Black-Logo.wine.svg"
+            alt=""
+          />
+          <input type="text" class="username" />
+          <input type="password" class="password" />
+          <button class="login-btn">Log in</button>
+          <div class="line">
+            <span class="span1"></span>
+            <h4>OR</h4>
+            <span class="span2"></span>
+          </div>
+
+          <div class="login-with-facebook">
+            <img
+              class="facebook-img"
+              src="Images/Facebook-f_Logo-Blue-Logo.wine.svg"
+              alt=""
+            />
+            <p class="p">Login with Facebook</p>
+          </div>
+          <p class="f">Forgotten your password?</p>
+        </div>
+        <div class="account-create">
+          <p class="a">Don't have an account?</p>
+          <p class="blue">Sign up</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 2000,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
